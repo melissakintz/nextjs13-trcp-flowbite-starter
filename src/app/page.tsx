@@ -1,6 +1,8 @@
 import { Check } from "lucide-react";
+import RandomServerComponent from "@/app/components/server/RandomServerComponent";
+import RandomClientComponent from "@/app/components/client/RandomClientComponent";
 
-export default function Home() {
+export default async function Home() {
   return (
     <main className={"h-screen w-screen"}>
       <div className={"flex h-full w-full items-center justify-center gap-5"}>
@@ -9,6 +11,10 @@ export default function Home() {
           <span className="sr-only">Icon description</span>
         </span>
         <h1>Starter Next.js 13 + Trpc + Flowbite + ESlint + Prettier</h1>
+      </div>
+      <div>
+        <RandomServerComponent />
+        <RandomClientComponent />
       </div>
     </main>
   );
